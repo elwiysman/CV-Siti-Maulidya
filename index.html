@@ -9,6 +9,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body>
     <header>
@@ -31,7 +35,10 @@
           <li><a href="#certificate">Seminar & Pelatihan</a></li>
         </ul>
       </div>
-      <a href="/assets/CV Siti Maulidya.pdf" class="download-btn" download
+      <a
+        href="/assets/Curriculum Vitae Siti Maulidya.pdf"
+        class="download-btn"
+        download
         >Download My CV Here</a
       >
     </nav>
@@ -89,25 +96,31 @@
 
       <section id="certificate">
         <h2>Galeri Sertifikat</h2>
-        <div class="slider-container">
-          <div class="slide active">
-            <img src="sertifikatbtcls.jpg" alt="Sertifikat 1" />
-            <p class="caption">Basic Trauma Cardiac Life Support (BTCLS)</p>
-          </div>
-          <div class="slide">
-            <img src="sertifikatbls.jpg" alt="Sertifikat 2" />
-            <p class="caption">Basic Life Support</p>
-          </div>
-          <div class="slide">
-            <img src="sertifikatekg.jpg" alt="Sertifikat 3" />
-            <p class="caption">Pelatihan Elektrokardiografi (EKG)</p>
-          </div>
-          <div class="slide">
-            <img src="sertifikatseft.jpg" alt="Sertifikat 3" />
-            <p class="caption">Spiritual Emotional Freedom Technique (SEFT)</p>
+
+        <div class="slider-wrapper">
+          <button class="prev-btn">&#10094;</button>
+
+          <div class="slider-container">
+            <div class="slide active">
+              <img src="img/sertifikatbtcls.jpg" alt="Sertifikat 1" />
+              <p class="caption">Basic Trauma Cardiac Life Support (BTCLS)</p>
+            </div>
+            <div class="slide">
+              <img src="img/sertifikatbls.jpg" alt="Sertifikat 2" />
+              <p class="caption">Basic Life Support</p>
+            </div>
+            <div class="slide">
+              <img src="img/sertifikatekg.jpg" alt="Sertifikat 3" />
+              <p class="caption">Pelatihan Elektrokardiografi (EKG)</p>
+            </div>
+            <div class="slide">
+              <img src="img/sertifikatseft.jpg" alt="Sertifikat 4" />
+              <p class="caption">
+                Spiritual Emotional Freedom Technique (SEFT)
+              </p>
+            </div>
           </div>
 
-          <button class="prev-btn">&#10094;</button>
           <button class="next-btn">&#10095;</button>
         </div>
       </section>
@@ -137,4 +150,7 @@
 
     <script src="script.js"></script>
   </body>
+  <button onclick="scrollToTop()" id="scrollTopBtn" title="Kembali ke atas">
+    <i class="fas fa-arrow-up"></i>
+  </button>
 </html>
