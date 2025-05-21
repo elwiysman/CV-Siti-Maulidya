@@ -330,4 +330,26 @@ footer p {
   section {
     border-radius: 3rem;
   }
+
+  footer {
+    padding: 2px
+  }
 }
+
+@media (hover: none) and (pointer: coarse) {
+  section:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  section.blur {
+    filter: none;
+  }
+
+  body:has(section:hover) section:not(:hover) {
+    filter: none;
+  }
+}
+
+
+
