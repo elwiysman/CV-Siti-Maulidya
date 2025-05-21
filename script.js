@@ -56,8 +56,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // SLIDER / SLIDE FOTO SERTIFIKAT
   const slides = document.querySelectorAll(".slider-container .slide");
-  const prevBtn = document.querySelector(".slider-container .prev-btn");
-  const nextBtn = document.querySelector(".slider-container .next-btn");
+  const prevBtn = document.querySelector(".prev-btn");
+  const nextBtn = document.querySelector(".next-btn");
 
   let currentSlide = 0;
   let interval = setInterval(nextSlide, 5000); // Ganti tiap 5 detik
@@ -95,3 +95,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
   showSlide(currentSlide);
 });
+
+// Tampilkan tombol saat scroll ke bawah
+window.onscroll = function () {
+  const btn = document.getElementById("scrollTopBtn");
+  if (
+    document.body.scrollTop > 300 ||
+    document.documentElement.scrollTop > 300
+  ) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+};
+
+// Fungsi scroll ke atas
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
