@@ -274,6 +274,28 @@ footer p {
 }
 
 @media (max-width: 768px) {
+  .profile-img {
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+
+  .profile-text h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #4a2e2e;
+  }
+
+  .profile-text .subtitle {
+    margin-top: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #4a2e2e;
+  }
+  
   .nav-toggle {
     display: block;
     margin-right: auto;
